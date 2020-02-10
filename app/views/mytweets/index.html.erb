@@ -1,0 +1,20 @@
+<h1>Tweet一覧</h1>
+
+<p><%= notice %></p>
+
+<table>
+  <tr>
+    <th>Your tweets</th>
+  </tr>
+
+<% @mytweets.each do |mt| %>
+  <tr>
+    <td><%= mt.content %></td>
+    <td><%= link_to 'View more details', mytweet_path(mt.id) %></td>
+    <td><%= link_to "Edit your tweet", edit_mytweet_path(mt.id) %></td>
+    <td><%= link_to 'Delete your tweet', mytweet_path(mt.id), method: :delete ,data: { confirm: 'Are you sure to delete？' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<%= link_to 'Create a new tweet!', new_mytweet_path %>

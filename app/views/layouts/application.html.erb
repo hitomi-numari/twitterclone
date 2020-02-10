@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>MyTweet</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+
+  <header>
+    <a class="logo-brand" href="#"><img alt="MyTweetのロゴ" src="/assets/eto_remake_nezumi.png"　width="100%" height="100%"></a>
+    <%= link_to("My Tweet", mytweets_path, {class: "logo"})%>
+  </header>
+
+<%= yield %>
+
+  <footer>
+    <p>運営会社MyTweet株式会社</p>
+    <p>© 2015-2016 Copyright MyTweet Corp.</p>
+  </footer>
+
+</body>
+</html>

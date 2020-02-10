@@ -1,0 +1,38 @@
+header {
+  width: 100%;
+  background-color: #00CCFF;
+  height: 54px;
+}
+.logo-brand {
+  vertical-align: middle;
+}
+
+.logo {
+  font-size: 40px;
+  vertical-align: middle;
+  text-decoration: none;
+  color: rgba(233, 30, 99, 0.7);
+  text-shadow: 3px 3px #fff, 4px 4px 0 #5d6f77, 4px 2px 0 #5d6f77, 2px 4px 0 #5d6f77, 2px 2px 0 #5d6f77;
+}
+
+
+footer {
+  width: 100%;
+  background-color: #00CCFF;
+  padding: 20px 0 10px 0;
+  color: white;
+  margin: auto;
+  padding-bottom: 10px;
+  font-size: 12px;
+  position: absolute;
+  bottom: 0;
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  text-align: center;
+}
