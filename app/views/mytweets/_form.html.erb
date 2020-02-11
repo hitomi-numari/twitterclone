@@ -2,7 +2,7 @@
 
 <% if @mytweet.errors.any? %>
     <div id="error_explanation">
-      <h2><%= @mytweet.errors.count %>件のエラーがあります。</h2>
+      <h2><%= @mytweet.errors.count %> error has occurred</h2>
       <ul>
       <% @mytweet.errors.full_messages.each do |msg| %>
         <li><%= msg %></li>
@@ -10,13 +10,10 @@
       </ul>
     </div>
 <% end %>
-
-  <div class="mytweet_content">
-    <%= form.label :content %>
-    <%= form.text_area :content　%>
+  <div class="form_group">
+    <%= form.label :content, class:'letter_change' %>
+    <%= form.text_area :content, class:'form_control' %>
   </div>
-
-    <%= form.submit %>
-    <% end %>
-    <%= link_to "Back to index", mytweets_path %>
-</div>
+  <%= form.submit %>
+<% end %>
+<%= link_to "Back to index", mytweets_path %>

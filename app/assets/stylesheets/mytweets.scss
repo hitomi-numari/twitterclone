@@ -1,3 +1,7 @@
+li {
+  list-style: none;
+}
+
 h1 {
   position: relative;
   background: #dfefff;
@@ -16,4 +20,40 @@ h1:after {
   border-style: solid;
   border-color: #fff #fff #a8d4ff;
   box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.15);
+}
+
+form {
+  margin: 20px;
+}
+
+.form_group {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  margin: 20px;
+}
+
+.form_control {
+  width:80%;
+  font-size:20px;
+}
+
+.letter_change {
+  font-size: 20px;
+}
+
+.btn-square-shadow {
+  display: inline-block;
+  padding: 0.5em 1em;
+  text-decoration: none;
+  background: #668ad8;
+  color: #FFF;
+  border-bottom: solid 4px #627295;
+  border-radius: 3px;
+}
+.btn-square-shadow:active {
+  -webkit-transform: translateY(4px);
+  transform: translateY(4px);
+  box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.2);
+  border-bottom: none;
 }
