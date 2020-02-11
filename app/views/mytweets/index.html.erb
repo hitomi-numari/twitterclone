@@ -1,19 +1,17 @@
-<h1>Tweet一覧</h1>
+<h1>MyTweet Threads</h1>
 
 <p><%= notice %></p>
 
-<table>
-  <tr>
-    <th>Your tweets</th>
-  </tr>
-
+<table class="table table-hover">
 <% @mytweets.each do |mt| %>
+<tbody>
   <tr>
-    <td><%= mt.content %></td>
-    <td><%= link_to 'View more details', mytweet_path(mt.id) %></td>
-    <td><%= link_to "Edit your tweet", edit_mytweet_path(mt.id) %></td>
-    <td><%= link_to 'Delete your tweet', mytweet_path(mt.id), method: :delete ,data: { confirm: 'Are you sure to delete？' } %></td>
+    <th><%= mt.content %></th>
+    <td><button type="botton" class="btn btn-success"><%= link_to 'View more details', mytweet_path(mt.id) %></button></td>
+    <td><button type="botton" class="btn btn-info"><%= link_to "Edit your tweet", edit_mytweet_path(mt.id) %></button></td>
+    <td><button type="botton" class="btn btn-warning"><%= link_to 'Delete your tweet', mytweet_path(mt.id), method: :delete ,data: { confirm: 'Are you sure to delete？' } %></button></td>
   </tr>
+</tbody>
 <% end %>
 </table>
 
